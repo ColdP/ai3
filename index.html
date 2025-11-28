@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>太聰明 - 陳綺貞</title>
+    <title>愛言葉Ⅲ - DECO*27</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
     <script>
@@ -11,7 +11,7 @@
             darkMode: 'class',
             theme: {
                 extend: {
-                    colors: { 'smart-blue': {"50":"#f0f9ff","100":"#e0f2fe","200":"#bae6fd","300":"#7dd3fc","400":"#38bdf8","500":"#0ea5e9","600":"#0284c7","700":"#0369a1","800":"#075985","900":"#0c4a6e"} },
+                    colors: { 'smart-blue': {"50":"#fdf2f8","100":"#fce7f3","200":"#fbcfe8","300":"#f9a8d4","400":"#f472b6","500":"#ec4899","600":"#db2777","700":"#be185d","800":"#9d174d","900":"#831843","950":"#500724"} },
                     fontFamily: {
                         serif: ['"Noto Serif JP"', '"Noto Serif SC"', 'serif'],
                         sans: ['"Nunito"', 'sans-serif'],
@@ -26,60 +26,60 @@
     </script>
     <style>
         ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f0f9ff; }
-        .dark ::-webkit-scrollbar-track { background: #0f172a; }
-        ::-webkit-scrollbar-thumb { background: #bae6fd; border-radius: 4px; }
-        .dark ::-webkit-scrollbar-thumb { background: #1e293b; }
-        ::-webkit-scrollbar-thumb:hover { background: #7dd3fc; }
-        .dark ::-webkit-scrollbar-thumb:hover { background: #334155; }
+        ::-webkit-scrollbar-track { background: #fdf2f8; }
+        .dark ::-webkit-scrollbar-track { background: #500724; }
+        ::-webkit-scrollbar-thumb { background: #fbcfe8; border-radius: 4px; }
+        .dark ::-webkit-scrollbar-thumb { background: #9d174d; }
+        ::-webkit-scrollbar-thumb:hover { background: #f9a8d4; }
+        .dark ::-webkit-scrollbar-thumb:hover { background: #be185d; }
         input[type=range] { -webkit-appearance: none; background: transparent; }
         input[type=range]::-webkit-slider-thumb {
             -webkit-appearance: none; height: 16px; width: 16px; border-radius: 50%;
-            background: #0ea5e9; cursor: pointer; margin-top: -6px; 
+            background: #ec4899; cursor: pointer; margin-top: -6px; 
             box-shadow: 0 1px 3px rgba(0,0,0,0.3); transition: transform 0.1s;
         }
-        .dark input[type=range]::-webkit-slider-thumb { background: #38bdf8; }
+        .dark input[type=range]::-webkit-slider-thumb { background: #f472b6; }
         input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.2); }
-        input[type=range]::-webkit-slider-runnable-track { width: 100%; height: 4px; cursor: pointer; background: #bae6fd; border-radius: 2px; }
+        input[type=range]::-webkit-slider-runnable-track { width: 100%; height: 4px; cursor: pointer; background: #fbcfe8; border-radius: 2px; }
         .dark input[type=range]::-webkit-slider-runnable-track { background: #334155; }
         .lyrics-row { transition: all 0.3s ease; }
         .lyrics-row:hover { opacity: 0.8; }
-        .lyrics-primary { font-size: 1.125rem; line-height: 1.75rem; color: #075985; font-weight: 600; }
-        .dark .lyrics-primary { color: #e0f2fe; }
+        .lyrics-primary { font-size: 1.125rem; line-height: 1.75rem; color: #9d174d; font-weight: 600; }
+        .dark .lyrics-primary { color: #fce7f3; }
         .lyrics-secondary { font-size: 0.95rem; line-height: 1.5rem; color: #64748b; margin-top: 0.25rem; }
         .dark .lyrics-secondary { color: #94a3b8; }
         .album-art-playing { animation: breathe 4s ease-in-out infinite; }
         @keyframes breathe {
             0%, 100% { transform: scale(1); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
-            50% { transform: scale(1.02); box-shadow: 0 20px 25px -5px #0ea5e94D; }
+            50% { transform: scale(1.02); box-shadow: 0 20px 25px -5px #ec48994D; }
         }
         .dark @keyframes breathe {
             0%, 100% { transform: scale(1); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3); }
-            50% { transform: scale(1.02); box-shadow: 0 20px 25px -5px #38bdf84D; }
+            50% { transform: scale(1.02); box-shadow: 0 20px 25px -5px #f472b64D; }
         }
         .modal-enter-active { opacity: 1; transform: scale(1); transition: opacity 300ms, transform 300ms; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="bg-gradient-to-b from-smart-blue-50 to-white dark:from-slate-900 dark:to-slate-950 min-h-screen text-slate-700 dark:text-slate-300 font-serif flex flex-col items-center relative transition-colors duration-500">
+<body class="bg-gradient-to-b from-smart-blue-50 to-white dark:from-smart-blue-950 dark:to-black min-h-screen text-slate-700 dark:text-slate-300 font-serif flex flex-col items-center relative transition-colors duration-500">
     <button id="themeToggleBtn" class="fixed top-4 right-4 z-30 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur shadow-md text-smart-blue-600 dark:text-smart-blue-400 hover:scale-105 transition-all duration-300">
         <svg id="sunIcon" class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" /></svg>
         <svg id="moonIcon" class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.75 9.75 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.75 9.75 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" /></svg>
     </button>
     <main class="w-full max-w-3xl px-6 py-12 md:py-20 flex-grow flex flex-col items-center">
         <header class="text-center mb-10 opacity-0 animate-fade-in-up" style="animation-delay: 0.1s;">
-            <h1 class="text-3xl md:text-5xl font-bold text-smart-blue-900 dark:text-smart-blue-300 mb-3 tracking-wide transition-colors">太聰明</h1>
-            <p class="text-lg md:text-xl text-smart-blue-600 dark:text-smart-blue-400 font-light tracking-widest transition-colors">陳綺貞</p>
+            <h1 class="text-3xl md:text-5xl font-bold text-smart-blue-900 dark:text-smart-blue-300 mb-3 tracking-wide transition-colors">愛言葉Ⅲ</h1>
+            <p class="text-lg md:text-xl text-smart-blue-600 dark:text-smart-blue-400 font-light tracking-widest transition-colors">DECO*27</p>
             <div class="w-16 h-1 bg-smart-blue-200 dark:bg-smart-blue-700 mx-auto mt-6 rounded-full transition-colors"></div>
         </header>
         <div class="mb-12 opacity-0 animate-fade-in-up w-full flex justify-center" style="animation-delay: 0.2s;">
             <div class="bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm p-2 rounded-xl border border-smart-blue-100 dark:border-slate-700 shadow-sm flex flex-wrap justify-center gap-2">
-                
+                <button class="lang-btn px-3 py-1.5 rounded-lg text-sm font-medium transition-colors hover:bg-white dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400" data-lang="jp">日本語</button>
                 <button class="lang-btn px-3 py-1.5 rounded-lg text-sm font-medium transition-colors hover:bg-white dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400" data-lang="cn">中文</button>
-                
-                
-                
+                <button class="lang-btn px-3 py-1.5 rounded-lg text-sm font-medium transition-colors hover:bg-white dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400" data-lang="en">English</button>
+                <button class="lang-btn px-3 py-1.5 rounded-lg text-sm font-medium transition-colors hover:bg-white dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400" data-lang="romaji">Romaji</button>
+                <button class="lang-btn px-3 py-1.5 rounded-lg text-sm font-medium transition-colors hover:bg-white dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400" data-lang="kana">かな</button>
             </div>
         </div>
         <article id="lyricsContainer" class="w-full space-y-6 text-center opacity-0 animate-fade-in-up" style="animation-delay: 0.3s;"></article>
@@ -91,14 +91,14 @@
                 <div class="relative group flex-shrink-0">
                     <div class="absolute -inset-1 bg-gradient-to-r from-smart-blue-300 to-smart-blue-500 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
                     <div id="albumArt" class="relative w-24 h-24 md:w-32 md:h-32 rounded-lg overflow-hidden shadow-lg bg-smart-blue-50 dark:bg-slate-800">
-                        <img src="https://too.smart.btm-m.site/cover.jpg" alt="Cover" class="w-full h-full object-cover" crossorigin="anonymous" id="sourceCoverImage" onerror="this.src='https://placehold.co/400?text=Music'">
+                        <img src="https://gcd.btm-m.site/ai3.jpg" alt="Cover" class="w-full h-full object-cover" crossorigin="anonymous" id="sourceCoverImage" onerror="this.src='https://placehold.co/400?text=Music'">
                     </div>
                 </div>
                 <div class="flex-grow w-full font-sans">
                     <div class="flex items-center justify-between mb-2">
                         <div>
-                            <h3 class="font-bold text-smart-blue-900 dark:text-smart-blue-300 text-lg transition-colors">太聰明</h3>
-                            <p class="text-sm text-smart-blue-500 dark:text-smart-blue-400 transition-colors">陳綺貞</p>
+                            <h3 class="font-bold text-smart-blue-900 dark:text-smart-blue-300 text-lg transition-colors">愛言葉Ⅲ</h3>
+                            <p class="text-sm text-smart-blue-500 dark:text-smart-blue-400 transition-colors">DECO*27</p>
                         </div>
                         <div class="text-xs font-mono text-smart-blue-400 dark:text-slate-500 transition-colors">
                             <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
@@ -179,246 +179,340 @@
             </div>
         </div>
     </div>
-    <audio id="audioPlayer" src="https://too.smart.btm-m.site/audio.mp3" preload="metadata"></audio>
+    <audio id="audioPlayer" src="https://gcd.btm-m.site/ai3.mp3" preload="metadata"></audio>
     <script>
         const lyricsData = [
     {
-        "jp": "",
-        "cn": "總以為謎一般難懂的我",
-        "en": "My two steps are your three steps, my four steps are your six steps",
-        "romaji": "",
-        "kana": "",
+        "jp": "想いの冒険を　忘れずに全部言えるかな",
+        "cn": "所谓思念的冒险　能不能不遗忘地全都说出来呢",
+        "en": "I wonder if I can say everything about this adventure of feelings without forgetting",
+        "romaji": "omoi no bouken wo　wasurezu ni zenbu ieru kana",
+        "kana": "おもいのぼうけんを　わすれずにぜんぶいえるかな",
         "id": 1
     },
     {
-        "jp": "",
-        "cn": "在你了解了以後 其實也沒什麼",
-        "en": "I think it would be nice if we could keep walking like that from now on",
-        "romaji": "",
-        "kana": "",
+        "jp": "君から聞きたいよ　何回目の僕に出会った？",
+        "cn": "想听你说说看啊　这是你遇见第几次的我了？",
+        "en": "I want to hear it from you: which version of \"me\" have you met?",
+        "romaji": "kimi kara kikitai yo　nankaime no boku ni deatta?",
+        "kana": "きみからききたいよ　なんかいめのぼくにであった？",
         "id": 2
     },
     {
-        "jp": "",
-        "cn": "我總是忽冷又忽熱 隱藏我的感受",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "僕は変わりました　新しい君に出会うために",
+        "cn": "我已经改变了　为了能遇见崭新的你",
+        "en": "I have changed, in order to meet the new you",
+        "romaji": "boku wa kawarimashita　atarashii kimi ni deau tame ni",
+        "kana": "ぼくはかわりました　あたらしいきみにであうために",
         "id": 3
     },
     {
-        "jp": "",
-        "cn": "只是怕 愛你的心被你看透",
-        "en": "What you think is the same thing I think",
-        "romaji": "",
-        "kana": "",
+        "jp": "久しぶりだねって　言えたならここで泣こっか",
+        "cn": "若是能说出一句「好久不见」　就在这里哭出来吧",
+        "en": "If we can say \"long time no see,\" let's cry right here",
+        "romaji": "hisashiburi da ne tte　ieta nara koko de nakokka",
+        "kana": "ひさしぶりだねって　いえたならここでなこっか",
         "id": 4
     },
     {
-        "jp": "",
-        "cn": "猜的沒錯想得太多 不會有結果",
-        "en": "I don't need that kind of miracle, even if you told me I could have it for free",
-        "romaji": "",
-        "kana": "",
+        "jp": "好きとかって　嫌いとかって",
+        "cn": "像是喜欢啦　或是讨厌啦",
+        "en": "Things like \"I love you\" or \"I hate you\"",
+        "romaji": "suki toka tte　kirai toka tte",
+        "kana": "すきとかって　きらいとかって",
         "id": 5
     },
     {
-        "jp": "",
-        "cn": "被你看穿了以後 我更無處可躲",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "何度だって愛を歌う君が",
+        "cn": "无论几次都高唱着爱的你",
+        "en": "You, who sings of love over and over again",
+        "romaji": "nando datte ai wo utau kimi ga",
+        "kana": "なんどだってあいをうたうきみが",
         "id": 6
     },
     {
-        "jp": "",
-        "cn": "我開始後悔不應該太聰明的賣弄",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "恋しくって　嘘じゃない本当だよ",
+        "cn": "令人爱怜　这不是谎言是真的喔",
+        "en": "I miss you so much; it's not a lie, it's the truth",
+        "romaji": "koishikutte　uso ja nai hontou da yo",
+        "kana": "こいしくって　うそじゃないほんとうだよ",
         "id": 7
     },
     {
-        "jp": "",
-        "cn": "只是怕親手將我的真心葬送",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "また出会おう",
+        "cn": "再一次相遇吧",
+        "en": "Let's meet again",
+        "romaji": "mata deaou",
+        "kana": "またであおう",
         "id": 8
     },
     {
-        "isSpacer": true
-    },
-    {
-        "jp": "",
-        "cn": "我猜著你的心 要再一次確定",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "僕ら“II”を嫌って　“I”に戻って",
+        "cn": "我们讨厌“II”　回到了“I”",
+        "en": "We hated \"II\" and went back to \"I\"",
+        "romaji": "bokura \"ni\" wo kiratte　\"ichi\" ni modotte",
+        "kana": "ぼくら“に”をきらって　“いち”にもどって",
         "id": 9
     },
     {
-        "jp": "",
-        "cn": "遙遠的距離都是因為太過聰明",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "何回だって　間違ってきたよ",
+        "cn": "无论几次　都弄错了啊",
+        "en": "We've made mistakes so many times",
+        "romaji": "nankai datte　machigatte kita yo",
+        "kana": "なんかいだって　まちがってきたよ",
         "id": 10
     },
     {
-        "jp": "",
-        "cn": "要猜著你的心 要再一次確定",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "消えない後悔と　冷めない愛情が　恋を再起動リブートする",
+        "cn": "无法消除的后悔　与无法冷却的爱情　将恋爱重新启动",
+        "en": "Indelible regrets and undying affection reboot our love",
+        "romaji": "kienai koukai to　samenai aijou ga　koi wo ribuuto suru",
+        "kana": "きえないこうかいと　さめないあいじょうが　こいをリブートする",
         "id": 11
     },
     {
-        "jp": "",
-        "cn": "混亂的思緒都是因為太想靠近你",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "ほら“I”を嫌って　また“II”に戻って",
+        "cn": "看吧讨厌“I”　又回到了“II”",
+        "en": "See, we hated \"I\" and went back to \"II\" again",
+        "romaji": "hora \"ichi\" wo kiratte　mata \"ni\" ni modotte",
+        "kana": "ほら“いち”をきらって　また“に”にもどって",
         "id": 12
     },
     {
-        "isSpacer": true
-    },
-    {
-        "isSpacer": true
-    },
-    {
-        "jp": "",
-        "cn": "猜的沒錯想得太多 不會有結果",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "“III”になって　愛を繋いでいこう",
+        "cn": "变成了“III”　将爱连接下去吧",
+        "en": "Becoming \"III,\" let's keep connecting this love",
+        "romaji": "\"san\" ni natte　ai wo tsunaide ikou",
+        "kana": "“さん”になって　あいをつないでいこう",
         "id": 13
     },
     {
-        "jp": "",
-        "cn": "被你看穿了以後 我更無處可躲",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "言いたい感情は　伝えたい正解は",
+        "cn": "想要说的感情　想要传达的正解",
+        "en": "The feelings I want to say, the correct answer I want to convey",
+        "romaji": "iitai kanjou wa　tsutaetai seikai wa",
+        "kana": "いいたいかんじょうは　つたえたいせいかいは",
         "id": 14
     },
     {
-        "jp": "",
-        "cn": "我開始後悔不應該太聰明的賣弄",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "たったひとつだけ　ありがとう",
+        "cn": "仅仅只有一个　谢谢你",
+        "en": "There is only one: Thank you",
+        "romaji": "tatta hitotsu dake　arigatou",
+        "kana": "たったひとつだけ　ありがとう",
         "id": 15
     },
     {
-        "jp": "",
-        "cn": "只是怕親手將我的真心葬送",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "想いの冒険は　これからもちゃんと続いていく",
+        "cn": "思念的冒险　今后也会好好地持续下去",
+        "en": "This adventure of feelings will continue properly from here on out",
+        "romaji": "omoi no bouken wa　kore kara mo chanto tsuzuite iku",
+        "kana": "おもいのぼうけんは　これからもちゃんとつづいていく",
         "id": 16
     },
     {
-        "jp": "",
-        "cn": "我猜著你的心 要再一次確定",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "3と9に乗って　言葉とか飛び越えちゃって",
+        "cn": "乘上3与9　飞越过语言之类的",
+        "en": "Riding on 3 and 9, leaping over things like words",
+        "romaji": "san to kyuu ni notte　kotoba toka tobikoechatte",
+        "kana": "さんときゅうにのって　ことばとかとびこえちゃって",
         "id": 17
     },
     {
-        "jp": "",
-        "cn": "遙遠的距離都是因為太過聰明",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "君も変わりました　新しい誰かに会うために",
+        "cn": "你也已经改变了　为了能遇见崭新的谁",
+        "en": "You have changed too, in order to meet someone new",
+        "romaji": "kimi mo kawarimashita　atarashii dareka ni au tame ni",
+        "kana": "きもかわりました　あたらしいだれかにあうために",
         "id": 18
     },
     {
-        "jp": "",
-        "cn": "要猜著你的心 要再一次確定",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "大人になりました　それだけで良いと思えた",
+        "cn": "变成了大人　觉得光是那样这就好了",
+        "en": "We've become adults; I thought that alone was enough",
+        "romaji": "otona ni narimashita　sore dake de ii to omoeta",
+        "kana": "おとなになりました　それだけでいいとおもえた",
         "id": 19
     },
     {
-        "jp": "",
-        "cn": "混亂的思緒都是因為太想靠近你",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "好きとかって　嫌いとかって",
+        "cn": "像是喜欢啦　或是讨厌啦",
+        "en": "Things like \"I love you\" or \"I hate you\"",
+        "romaji": "suki toka tte　kirai toka tte",
+        "kana": "すきとかって　きらいとかって",
         "id": 20
     },
     {
-        "jp": "",
-        "cn": "猜的沒錯想得太多 不會有結果",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "何度だって愛を歌う君が",
+        "cn": "无论几次都高唱着爱的你",
+        "en": "You, who sings of love over and over again",
+        "romaji": "nando datte ai wo utau kimi ga",
+        "kana": "なんどだってあいをうたうきみが",
         "id": 21
     },
     {
-        "jp": "",
-        "cn": "被你看穿了以後 我更無處可躲",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "恋しくって　嘘じゃない本当だよ",
+        "cn": "令人爱怜　这不是谎言是真的喔",
+        "en": "I miss you so much; it's not a lie, it's the truth",
+        "romaji": "koishikutte　uso ja nai hontou da yo",
+        "kana": "こいしくって　うそじゃないほんとうだよ",
         "id": 22
     },
     {
-        "jp": "",
-        "cn": "我開始後悔不應該太聰明的賣弄",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "また出会おう",
+        "cn": "再一次相遇吧",
+        "en": "Let's meet again",
+        "romaji": "mata deaou",
+        "kana": "またであおう",
         "id": 23
     },
     {
-        "jp": "",
-        "cn": "只是怕親手將我的真心葬送",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "“恋”をして　…バカ。",
+        "cn": "谈了“恋爱”　…笨蛋。",
+        "en": "Falling in \"love\" ...idiot.",
+        "romaji": "\"koi\" wo shite　...baka.",
+        "kana": "“こい”をして　…バカ。",
         "id": 24
     },
     {
-        "isSpacer": true
-    },
-    {
-        "jp": "",
-        "cn": "只是怕親手將我的真心葬送",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "“愛”にして　…バカ。",
+        "cn": "把它当成“爱”　…笨蛋。",
+        "en": "Making it into \"love\" ...idiot.",
+        "romaji": "\"ai\" ni shite　...baka.",
+        "kana": "“あい”にして　…バカ。",
         "id": 25
     },
     {
-        "isSpacer": true
-    },
-    {
-        "isSpacer": true
-    },
-    {
-        "jp": "",
-        "cn": "我開始後悔不應該太聰明的賣弄",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "バカでいい　この先もずっとこのまま",
+        "cn": "是笨蛋也好　哪怕往后也一直像这样",
+        "en": "I'm fine being an idiot, staying like this forever",
+        "romaji": "baka de ii　kono saki mo zutto kono mama",
+        "kana": "バカでいい　このさきもずっとこのまま",
         "id": 26
     },
     {
-        "jp": "",
-        "cn": "只是怕親手將我的真心葬送",
-        "en": "",
-        "romaji": "",
-        "kana": "",
+        "jp": "…バカ。",
+        "cn": "…笨蛋。",
+        "en": "...Idiot.",
+        "romaji": "...baka.",
+        "kana": "…バカ。",
         "id": 27
+    },
+    {
+        "jp": "僕ら“II”を嫌って　“I”に戻って",
+        "cn": "我们讨厌“II”　回到了“I”",
+        "en": "We hated \"II\" and went back to \"I\"",
+        "romaji": "bokura \"ni\" wo kiratte　\"ichi\" ni modotte",
+        "kana": "ぼくら“に”をきらって　“いち”にもどって",
+        "id": 28
+    },
+    {
+        "jp": "何回だって　間違ってきたよ",
+        "cn": "无论几次　都弄错了啊",
+        "en": "We've made mistakes so many times",
+        "romaji": "nankai datte　machigatte kita yo",
+        "kana": "なんかいだって　まちがってきたよ",
+        "id": 29
+    },
+    {
+        "jp": "消えない後悔と　冷めない愛情が　恋を再起動リブートする",
+        "cn": "无法消除的后悔　与无法冷却的爱情　将恋爱重新启动",
+        "en": "Indelible regrets and undying affection reboot our love",
+        "romaji": "kienai koukai to　samenai aijou ga　koi wo ribuuto suru",
+        "kana": "きえないこうかいと　さめないあいじょうが　こいをリブートする",
+        "id": 30
+    },
+    {
+        "jp": "ほら“I”を嫌って　また“II”に戻って",
+        "cn": "看吧讨厌“I”　又回到了“II”",
+        "en": "See, we hated \"I\" and went back to \"II\" again",
+        "romaji": "hora \"ichi\" wo kiratte　mata \"ni\" ni modotte",
+        "kana": "ほら“いち”をきらって　また“に”にもどって",
+        "id": 31
+    },
+    {
+        "jp": "“III”になって　愛を繋いでいこう",
+        "cn": "变成了“III”　将爱连接下去吧",
+        "en": "Becoming \"III,\" let's keep connecting this love",
+        "romaji": "\"san\" ni natte　ai wo tsunaide ikou",
+        "kana": "“さん”になって　あいをつないでいこう",
+        "id": 32
+    },
+    {
+        "jp": "言いたい感情は　伝えたい正解は",
+        "cn": "想要说的感情　想要传达的正解",
+        "en": "The feelings I want to say, the correct answer I want to convey",
+        "romaji": "iitai kanjou wa　tsutaetai seikai wa",
+        "kana": "いいたいかんじょうは　つたえたいせいかいは",
+        "id": 33
+    },
+    {
+        "jp": "たったひとつだけ　ありがとう",
+        "cn": "仅仅只有一个　谢谢你",
+        "en": "There is only one: Thank you",
+        "romaji": "tatta hitotsu dake　arigatou",
+        "kana": "たったひとつだけ　ありがとう",
+        "id": 34
+    },
+    {
+        "jp": "メーデー　僕と判っても　もう抱き締めなくて易々んだよ",
+        "cn": "Mayday　即便是认出了我　也不用那样轻易地拥抱我了啊",
+        "en": "Mayday, even if you recognize me, you don't have to embrace me so easily anymore",
+        "romaji": "meedee　boku to wakattemo　mou dakishimenakute iindayo",
+        "kana": "メーデー　ぼくとわかっても　もうだきしめなくていいんだよ",
+        "id": 35
+    },
+    {
+        "jp": "終わんない愛を抱いてたくないの 　もっとちゃんと不安にしてよ",
+        "cn": "不想怀抱着没有终结的爱　让我更加感到不安吧",
+        "en": "I don't want to embrace endless love; make me more properly anxious",
+        "romaji": "owannai ai wo daitetakunai no　motto chanto fuan ni shite yo",
+        "kana": "おわんないあいをだいてたくないの　もっとちゃんとふあんにしてよ",
+        "id": 36
+    },
+    {
+        "jp": "妄想感傷代償連盟　愛を懐いて理想を号んだ",
+        "cn": "妄想感伤代偿联盟　怀抱着爱呼喊理想",
+        "en": "Delusion Sentiment Compensation Federation, embracing love and screaming ideals",
+        "romaji": "mousou kanshou daishou renmei　ai wo idaite risou wo sakenda",
+        "kana": "もうそうかんしょうだいしょうれんめい　あいをいだいてりそうをさけんだ",
+        "id": 37
+    },
+    {
+        "jp": "行き場のある愛のメロディーを",
+        "cn": "将有着归宿的爱的旋律",
+        "en": "The melody of love that has a place to go",
+        "romaji": "ikiba no aru ai no merodii wo",
+        "kana": "いきばのあるあいのメロディーを",
+        "id": 38
+    },
+    {
+        "jp": "今 これまでにありがとう",
+        "cn": "此刻　对这一路走来的一切说声谢谢",
+        "en": "Now, thank you for everything up to this point",
+        "romaji": "ima kore made ni arigatou",
+        "kana": "いま　これまでにありがとう",
+        "id": 39
+    },
+    {
+        "jp": "いつまでも君と　「こんな歌あったね」って",
+        "cn": "无论何时都想与你　说着「曾有这样的歌呢」",
+        "en": "Forever with you, saying \"There was a song like this, huh?\"",
+        "romaji": "itsumademo kimi to　\"konna uta atta ne\" tte",
+        "kana": "いつまでもきみと　「こんなうたあったね」って",
+        "id": 40
+    },
+    {
+        "jp": "出会いを数えられるように",
+        "cn": "细数着我们的相遇",
+        "en": "So that we can count our encounters",
+        "romaji": "deai wo kazoerareru you ni",
+        "kana": "であいをかぞえられるように",
+        "id": 41
     }
 ];
         document.addEventListener('DOMContentLoaded', () => {
-            const initialLangs = ['cn'];
+            const initialLangs = ['jp', 'cn', 'en', 'romaji', 'kana'];
             let selectedLangs = initialLangs.slice(0, 2); 
             const maxLangs = 2;
             let selectedLyricsForShare = new Set();
@@ -502,9 +596,9 @@
             const albumArt = document.getElementById('albumArt');
             if ('mediaSession' in navigator) {
                 navigator.mediaSession.metadata = new MediaMetadata({
-                    title: '太聰明',
-                    artist: '陳綺貞',
-                    artwork: [{ src: 'https://too.smart.btm-m.site/cover.jpg', sizes: '512x512', type: 'image/jpeg' }]
+                    title: '愛言葉Ⅲ',
+                    artist: 'DECO*27',
+                    artwork: [{ src: 'https://gcd.btm-m.site/ai3.jpg', sizes: '512x512', type: 'image/jpeg' }]
                 });
                 navigator.mediaSession.setActionHandler('play', () => audio.play());
                 navigator.mediaSession.setActionHandler('pause', () => audio.pause());
@@ -562,10 +656,42 @@
             function openShareModal(preselectId) {
                 selectedLyricsForShare.clear();
                 if (preselectId) selectedLyricsForShare.add(preselectId);
+                
+                // --- Sync theme with page state on open ---
+                if (htmlElement.classList.contains('dark')) {
+                    currentCanvasTheme = 'dark';
+                } else {
+                    currentCanvasTheme = 'light';
+                }
+                updateThemeButtons();
+                
                 renderModalList();
                 shareModal.classList.remove('hidden');
                 drawCanvas();
             }
+            
+            // --- Helper to update UI state of theme buttons ---
+            function updateThemeButtons() {
+                const lightBtn = document.querySelector('.theme-btn[data-theme="light"]');
+                const darkBtn = document.querySelector('.theme-btn[data-theme="dark"]');
+                const activeClasses = ['bg-white', 'dark:bg-slate-600', 'shadow-sm', 'text-smart-blue-600', 'dark:text-white'];
+                const inactiveClasses = ['text-slate-500', 'dark:text-slate-400', 'hover:bg-white/50'];
+                
+                // Helper to bulk update classes
+                const setBtnState = (btn, isActive) => {
+                    if (isActive) {
+                        btn.classList.add(...activeClasses);
+                        btn.classList.remove(...inactiveClasses);
+                    } else {
+                        btn.classList.remove(...activeClasses);
+                        btn.classList.add(...inactiveClasses);
+                    }
+                };
+
+                setBtnState(lightBtn, currentCanvasTheme === 'light');
+                setBtnState(darkBtn, currentCanvasTheme === 'dark');
+            }
+
             function renderModalList() {
                 modalList.innerHTML = '';
                 lyricsData.forEach(row => {
@@ -619,9 +745,9 @@
                 ctx.scale(scale, scale);
                 const grad = ctx.createLinearGradient(0,0, baseWidth, totalHeight);
                 if (currentCanvasTheme === 'light') {
-                    grad.addColorStop(0, '#f0f9ff'); grad.addColorStop(1, '#ffffff');
+                    grad.addColorStop(0, '#fdf2f8'); grad.addColorStop(1, '#ffffff');
                 } else {
-                    grad.addColorStop(0, '#0f172a'); grad.addColorStop(1, '#1e293b');
+                    grad.addColorStop(0, '#500724'); grad.addColorStop(1, '#831843');
                 }
                 ctx.fillStyle = grad;
                 ctx.fillRect(0, 0, baseWidth, totalHeight);
@@ -650,7 +776,7 @@
                     const lang1 = selectedLangs[0];
                     if (row[lang1]) {
                         ctx.font = `bold ${fontSizePrimary}px ${getFontStack(lang1)}`;
-                        ctx.fillStyle = currentCanvasTheme === 'light' ? '#075985' : '#e0f2fe';
+                        ctx.fillStyle = currentCanvasTheme === 'light' ? '#9d174d' : '#fce7f3';
                         ctx.fillText(row[lang1], x, y);
                         y += fontSizePrimary * 1.5;
                     }
@@ -668,7 +794,7 @@
                 });
                 y += 20;
                 ctx.beginPath();
-                ctx.strokeStyle = currentCanvasTheme === 'light' ? '#bae6fd' : '#334155';
+                ctx.strokeStyle = currentCanvasTheme === 'light' ? '#fbcfe8' : '#334155';
                 ctx.lineWidth = 4;
                 if (currentAlign === 'left') {
                     ctx.moveTo(100, y); ctx.lineTo(200, y);
@@ -684,17 +810,18 @@
                 if (currentAlign === 'right') footerX = baseWidth - 100;
                 ctx.textAlign = currentAlign;
                 ctx.font = `bold 42px "Noto Serif JP", serif`; 
-                ctx.fillStyle = currentCanvasTheme === 'light' ? '#0284c7' : '#38bdf8';
-                ctx.fillText("太聰明", footerX, y);
+                ctx.fillStyle = currentCanvasTheme === 'light' ? '#db2777' : '#f472b6';
+                ctx.fillText("愛言葉Ⅲ", footerX, y);
                 y += 60;
                 ctx.font = `32px "Noto Serif JP", serif`;
                 ctx.fillStyle = currentCanvasTheme === 'light' ? '#64748b' : '#94a3b8';
-                ctx.fillText("陳綺貞", footerX, y);
+                ctx.fillText("DECO*27", footerX, y);
             }
             document.getElementById('openShareBtn').addEventListener('click', () => openShareModal());
             document.getElementById('closeShareBtn').addEventListener('click', () => document.getElementById('shareModal').classList.add('hidden'));
             document.querySelectorAll('.theme-btn').forEach(b => b.addEventListener('click', (e) => {
                 currentCanvasTheme = e.target.dataset.theme;
+                updateThemeButtons(); // Update visual state
                 drawCanvas();
             }));
             document.querySelectorAll('.align-btn').forEach(b => b.addEventListener('click', (e) => {
@@ -707,7 +834,7 @@
             });
             document.getElementById('downloadBtn').addEventListener('click', () => {
                 const link = document.createElement('a');
-                link.download = `太聰明-Share.png`;
+                link.download = `愛言葉Ⅲ-Share.png`;
                 link.href = canvas.toDataURL();
                 link.click();
             });
